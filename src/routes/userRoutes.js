@@ -5,7 +5,7 @@ import loginRequired from '../middlewares/loginRequired.js';
 
 const router = new Router();
 
-//router.get('/',UserController.index); // Não existe em uma aplicação real
+router.get('/',UserController.index); // Não existe em uma aplicação real
 //router.get('/', UserController.show); // Não existe em uma aplicação real
 
 
