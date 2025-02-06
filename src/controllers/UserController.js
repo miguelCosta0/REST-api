@@ -6,9 +6,9 @@ class UserController {
             const newUser = await User.create(req.body)
             res.json(newUser);
         } catch (err) {
-            res.status(400).json(err.errors.map(error => {
-                return error.message;
-            }));
+            res.status(400).json({
+              errors: err.errors.map(error => error.message)
+            });
         }
     }
 
