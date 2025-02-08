@@ -27,7 +27,7 @@ class AlunoController {
             const novoAluno = await Aluno.create(req.body);
             return res.json(novoAluno);
         } catch (err) {
-            return res.status(400).json('error');
+            return res.status(400).json('student already exists');
         }
     }
 
