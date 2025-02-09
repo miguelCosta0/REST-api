@@ -14,7 +14,7 @@ import homeRoutes from './src/routes/homeRoutes.js';
 import alunoRoutes from './src/routes/alunoRoutes.js';
 
 const corsOptions = {
-  origin: ['http://localhost:3000', 'http://localhost:3001'],
+  origin: ['http://localhost:3000', 'http://34.152.35.136:82'],
   methods: ['GET', 'POST', 'PATCH', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }
