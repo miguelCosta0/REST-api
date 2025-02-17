@@ -46,6 +46,9 @@ class PhotoController {
       });
     }
 
+    await Photo.destroy({
+      where: { file_name }
+    });
     await fsPromises.rm(filePath);
 
     return res.status(200).json('photo successfully removed');
